@@ -1,0 +1,296 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Word */
+.word {
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.59vmin;
+  text-align: left;
+  color: #707070;
+  text-transform: uppercase;
+  margin-left: 630px;
+  padding-bottom: 10px;
+}
+/* Background */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image:url('../../images/site system/pexels-george-pak-7972282.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position:relative;
+  text-align: center;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  display: block;
+  position: absolute;
+  top: -20%;
+  left: 3%;
+  opacity: 1;
+}
+
+.polygon {
+  position: absolute;
+  top: 90px;
+  left: 550px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  text-align: left;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2.66px;
+  opacity: 1;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  text-align: left;
+  color: #E6E6E6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60pt;
+  font-weight: 700;
+  letter-spacing: 7.1px;
+  opacity: 1;
+}
+
+/* PopUp Form Login & Forgot Password*/
+.form-popup h1 {
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  margin-bottom: 20px;
+  letter-spacing: 2.66px;
+  font-family: 'Montserrat', sans-serif;
+}
+.forget-password h1{
+text-align: center;
+color: #fff;
+opacity: 1;
+margin-bottom: 20px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.59vmin;
+}
+.form-popup h4,
+.forget-password h4 {
+  text-align: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.5;
+}
+
+.open-button {
+  position: absolute;
+  background-color: #c4c4c4;
+  color: #fff;
+  padding: 10px 40px;
+  margin-bottom: 40px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  bottom: 23px;
+  left: 70px;
+  width: 300px;
+  outline: none;
+  border-radius: 9px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.29vmin;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 38px;
+  height: 54px;
+}
+
+
+.form-popup {
+  display: none;
+  position: absolute;
+  bottom: 130px;
+  left: 15px;
+  z-index: 9;
+  color: #fff;
+  width: 700px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  padding: 0 24px 48px;
+}
+
+.forget-password {
+  display: none;
+  bottom: 200px;
+  color: #fff;
+  width: 600px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  position: absolute;
+  animation-name: right-to-left;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+@keyframes right-to-left {
+  from {
+    left: 100%;
+    width: 200%;
+  }
+
+  to {
+    left: 0%;
+    width: 100%;
+  }
+
+}
+
+
+.form-container {
+  max-width: 370px;
+  padding: 30px;
+}
+
+.forget-password {
+  max-width: 300px;
+  padding: 10px;
+}
+
+
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container input[type=email]{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #e9e9f0;
+  background: transparent;
+}
+
+.forget-password input[type=tel] {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #e9e9f0;
+  background: transparent;
+}
+
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus,
+.form-container input[type-=email]:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.forget-password input[type=tel]:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+
+.form-container input[type="checkbox"] {
+  margin-right: 5px;
+  border: 1px solid #808495;
+  opacity: 1;
+}
+
+
+.form-container a {
+  display: block;
+  text-align: right;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  right: 20px;
+}
+
+
+.form-container .btn {
+  background-color: #707070;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+
+.form-container .btn-login,
+.forget-password .request {
+  background-color: #707070;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  margin: auto;
+  margin-left: 34px;
+  margin-top: 34px;
+  opacity: 1;
+  outline: none;
+  border: none;
+}
+.form-container .btn-registration{
+  background-color: #707070;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  margin:auto;
+  opacity: 1;
+  outline: none;
+  border: none;
+  letter-spacing: 0.1rem;
+}
+
+.form-container .cancel {
+  position: relative;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #888;
+  color: #eee;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+

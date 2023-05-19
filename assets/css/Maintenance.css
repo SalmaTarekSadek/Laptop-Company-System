@@ -1,0 +1,166 @@
+a,
+a:hover,
+a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------
+    NAVIGATIONBAR STYLE
+----------------------------------------------------- */
+#nav {
+    position: absolute;
+    left: 250px;
+    padding: 10px;
+    background-color: white;
+    min-width: 176vh;
+}
+
+#nav.active {
+    position: absolute;
+    left: 80px;
+    min-width: 201vh;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 250px;
+    background: #43425D;
+    min-height: 100%;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+#sidebar p {
+    display: inline;
+}
+
+#sidebar.active .sidebar-header h3,
+#sidebar.active .CTAs,
+#sidebar.active p,
+#sidebar.active img,
+#sidebar.active h3 {
+    display: none;
+}
+
+#sidebar #icon {
+    display: none;
+}
+
+#sidebar.active #icon {
+    display: block;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #33334f;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background: #33334f;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+    position: absolute;
+    right: 20px;
+}
+
+.sidebar-header button {
+    color: white;
+    background-color: #33334f;
+    border: none;
+}
+
+#sidebar img {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* ---------------------------------------------------
+    First and Second Tables
+----------------------------------------------------- */
+
+table .row1,
+.table2 .R1 {
+    background-color: #F5F6FA;
+    border: #f0efef;
+}
+
+.row1 th {
+    color: #A3A6B4;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.table {
+    background-color: white;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.table table {
+    margin: 10px;
+}
+
+.table td {
+    border-right: 1px solid #f0efef;
+    border-top: none;
+}
+
+.table th {
+    width: 60px;
+    border: none;
+}
+
+.table th:first-child {
+    width: 100px !important;
+}
+
+.table td:last-child {
+    border-right: hidden;
+}
+
+.table tr:last-child,
+.table tr:first-child {
+    border-bottom: hidden;
+    text-align: center;
+}
+
+.table td {
+    border-top: 1px solid #f0efef;
+    color: #A3A6B4;
+    text-align: center;
+    font-weight: 500;
+}
+
+#table-scroll {
+    height: 300px;
+    overflow: auto;
+}

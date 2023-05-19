@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="assets/css/hp.css">
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="images/Letter F copy.png">
+  <!-- Font Awesome JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+
+  <title>HP</title>
+</head>
+
+<body style="background-color: #F0F0F7;">
+  <div class="wrapper">
+    <!-- start NavigationBar -->
+    <nav id="nav">
+      <i class="fa fa-search" style="color: #BCBCCB;"></i>
+      <div class="search-container" style="display: inline-block;">
+        <form>
+          <input type="text" placeholder="Search" name="search" style="border:none; color: #4D4F5C;">
+        </form>
+      </div>
+      <div style="display: inline-block;position:absolute; right:20px;">
+        <i class='fas fa-comments' style="color: #BCBCCB; margin-right: 10px;"></i>
+        <i class="fa fa-bell" style="color: #BCBCCB; margin-right: 10px;"></i>
+        <div class="vr" style="display: inline-block; margin-right: 10px;"></div>
+        <p style="display: inline-block;">Ahmed Tarek</p>
+        <div class="btn-group" style="display: inline-block;">
+          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            style="border:none;background-color: white;">
+            <i class="fa fa-angle-down" style="color: #BCBCCB;"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" style="border:none;margin-top: 20px;">
+            <button class="dropdown-item" type="button"><b>status : </b>Online</button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" type="button">Account setting</button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" type="button">Feedback</button>
+            <div class="dropdown-divider"></div>
+            <a href="E:\Project-1\Home.html">
+              <button class="dropdown-item" type="button">Logout</button>
+            </a>
+          </div>
+        </div>
+        <img src="images/Mask Group 1.png">
+    </nav>
+    <!-- End NavigationBar -->
+    <!-- start SideBar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <button type="button" id="sidebarCollapse">
+          <i class="fa fa-bars" id="icon"></i>
+          <h3>F a l c o n</h3>
+        </button>
+      </div>
+
+      <ul class="list-unstyled components">
+        <li>
+          <a href="Home.html">
+            <i class="fas fa-home" style="color:#A5A4BF ;"></i>
+            <p>Home</p>
+          </a>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fa fa-signal" style="color:#A3A0FB ;"></i>
+            <p>Stock</p>
+          </a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="mainStock.html">
+                <i class="fa fa-signal" style="color:#A3A0FB;"></i>
+                <p>MainStock</p>
+              </a>
+            </li>
+            <li>
+              <a href="laptop.html">
+                <i class="fa fa-laptop" style="color:#A3A0FB;"></i>
+                <p>Laptop</p>
+              </a>
+            </li>
+            <li>
+              <a href="Charger.html">
+                <i class="fa fa-plug" style="color:#A3A0FB ;"></i>
+                <p>Charger</p>
+              </a>
+            </li>
+            <li>
+              <a href="add.html">
+                <i class="fa fa-plus-circle" style="color:#A3A0FB ;"></i>
+                <p>Add</p>
+              </a>
+            </li>
+            <li>
+              <a href="spare.html">
+                <i class="fa fa-retweet" style="color: #A3A0FB ;"></i>
+                <p>Spare parts</p>
+              </a>
+            </li>
+            <li>
+              <a href="Maintenance.html">
+                <i class="fa fa-wrench" style="color:#A3A0FB ;"></i>
+                <p>Maintenance</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <img src="images/letter F white.png">
+    </nav>
+    <!-- End SideBar  -->
+      <!-- start Page Content  -->
+    <div id="content">
+      <div class="div1">
+        <img src="images\hp.png">
+        <span>hp</span>
+        <i class="fas fa-arrow-right" id="icon"></i>
+      </div>
+
+      <div class="row" id="sec1">
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images/avatar.png">
+              <span>zbook</span>
+              <i onclick="myFunction()" class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images/avatar.png">
+              <span>840</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images/avatar.png">
+              <span>640</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between" id="div1">
+              <img src="images/avatar.png">
+              <span>745</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        </nav>
+        <div class="maintable" id="tab">
+          <div class="table-responsive">
+            <table class="table">
+              <tbody id="table_body">
+                <tr class="row1">
+                <th>Laptop</th>
+                <th>Ram</th>
+                <th>Cpu</th>
+                <th>hard</th>
+                <th>class</th>
+                <th>battery</th>
+                <th>Serial</th>
+                <th>Delete</th>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i7</td>
+                <td>500</td>
+                <td>A</td>
+                <td>ok</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>B</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5005</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>                
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>zbook</td>
+                <td>8</td>
+                <td>i5</td>
+                <td>500</td>
+                <td>D</td>
+                <td>N/A</td>
+                <td>ser5345</td>
+                <td>
+                  <div class="action_container">
+                  <button type="remove" title="Delete" style="background: none; border:none;" onclick="remove_tr(this)">
+                    <i class="fa fa-trash" aria-hidden="true" style="color: #dc3545;"></i>
+                </button>
+              </div>
+              </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images\avatar.png">
+              <span>CVX</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images\avatar.png">
+              <span>XCVX</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images\avatar.png">
+              <span>XCVBXF</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images\avatar.png">
+              <span>SDF</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images\avatar.png">
+              <span>XCVSE</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images\avatar.png">
+              <span>XCVX</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images\avatar.png">
+              <span>VXCVX</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="d-flex justify-space-between">
+              <img src="images\avatar.png">
+              <span>DFSB</span>
+              <i class="fas fa-arrow-right" id="icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- End Page Content  -->
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    //sideBar
+    $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $('#sec1').toggleClass('active');
+      });
+    });
+  // Remove icon 
+    function myFunction() {
+      var x = document.getElementById("tab");
+      var y = document.getElementById("sec1")
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    } 
+
+    function clean_first_tr(firstTr) {
+    let children = firstTr.children;
+    
+    children = Array.isArray(children) ? children : Object.values(children);
+    children.forEach(x=>{
+        if(x !== firstTr.lastElementChild)
+        {
+            x.firstElementChild.value = '';
+        }
+    });
+}
+
+function remove_tr(This) {
+    if(This.closest('tbody').childElementCount == 1)
+    {
+        alert("You Don't have Permission to Delete This ?");
+    }else{
+        This.closest('tr').remove();
+    }
+}
+  </script>
+</body>
+
+</html>

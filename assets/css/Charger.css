@@ -1,0 +1,180 @@
+a,
+a:hover,
+a:focus {
+    color:white;
+    text-decoration: none;
+}
+/* ---------------------------------------------------
+    NAVIGATIONBAR STYLE
+----------------------------------------------------- */
+#nav{
+    position: absolute;
+    left: 250px; 
+    padding: 10px;
+    background-color: white;
+    width: 84%;
+}
+
+#nav.active {
+    position: absolute;
+    left:80px;
+    min-width: 201vh;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+}
+
+
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 250px;
+    background: #43425D;
+    min-height: 100%;
+} 
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+#sidebar p{
+    display: inline;
+}
+
+#sidebar.active .sidebar-header h3,
+#sidebar.active .CTAs,
+#sidebar.active p,
+#sidebar.active img,
+#sidebar.active h3{
+    display: none;
+}
+
+#sidebar #icon{
+    display: none;
+}
+
+#sidebar.active #icon{
+    display: block;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #33334f;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background: #33334f;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+    position: absolute;
+    right: 20px;
+}
+
+.sidebar-header button{
+    color: white;
+    background-color:#33334f;
+    border: none;
+}
+
+#sidebar img{
+    position: absolute;
+    bottom: 10px; 
+}
+
+
+#sec1 {
+    /* margin: 50px 1 50px; */
+    margin-left: 425px;
+    margin-top: 120px;
+    margin-right: 132px;
+}
+
+#sec1 div {
+    margin-bottom: 14px;
+}
+
+#sec1 img {
+    width: 100px;
+}
+
+#sec1 span {
+    display: inline-flex;
+    margin-top: 20px;
+    margin-right: 140px;
+    color: #4D4F5C;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#sec1 #icon {
+    font-size: 25px;
+    color: #707070;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+}
+
+.card {
+    background-color: white;
+    border: none;
+}
+.fa{
+        cursor: pointer;
+        user-select: none;
+}
+.maintable{
+    background-color: white;
+    width: 420px;
+    margin-left: 18px;
+    display: none;
+}
+
+.maintable .table{
+    margin: 30px 50px 20px;
+    width:295px;
+    border: #F1F1F3;
+}
+
+.table .row1{
+    background-color: #F5F6FA;
+    border: #F5F6FA;
+}
+
+.row1 th{
+    color:#A3A6B4;
+    border-top: none;
+}
+
+.table td{
+    color:#4D4F5C;
+}
+
+.d-flex{
+    display: flex;
+}
+.justify-space-between{
+    justify-content: space-between;
+}

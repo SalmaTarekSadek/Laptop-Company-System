@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" media="(min-width :1400px)">
+    <link rel="stylesheet" href="assets/css/styleResponsiv.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="images/Letter F copy.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@600&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Word-->
+    <div class="word">
+        <h1>FALCON</h1>
+    </div>
+    <!-- Home -->
+    <div class="banner">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" id="logo">
+            <img src="images/Polygon 1.png" alt="polygon" class="polygon">
+        </div>
+        <div class="bottom-left">We make technology accessible!</div>
+        <div class="bottom-right">
+            <p>Professional</p>
+            <p>Technology</p>
+        </div>
+    </div>
+    <button class="open-button" onclick="openForm()">
+        <h1>ENTER</h1>
+
+    </button>
+    <div class="form-popup" id="myForm">
+        <!-- Login -->
+        <form action="/action_page.php" class="form-container">
+            <div class="btn cancel" onclick="closeForm()">&times;</div>
+
+            <h1>Falcon System</h1>
+
+            <label for="text"></label>
+            <input type="text" placeholder="First Name" name="FirstName" required>
+
+            <label for="text"></label>
+            <input type="text" placeholder="Last Name" name="SecondName" required>
+
+            <label for="text"></label>
+            <input type="email" placeholder="@example.com" name="Email" required>
+
+            <label for="psw"></label>
+            <input type="password" placeholder="Password" name="psw" required>
+
+            <label for="psw"></label>
+            <input type="password" placeholder="Confirm Password" name="psw" required>
+            <form>
+                <button formaction="Home.html" type="submit" class="btn-login" style="margin-left: 92px; margin-top: 1px;">Login</button>
+            </form>
+        </form>
+    </div>
+    <!-- Forgot Password -->
+    <form action="/action_page.php" class="forget-password" id="forget">
+        <h1>Falcon</h1>
+        <h4>Enter your number and we send you a password reset link.</h4>
+        <label for="phone"></label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <button type="submit" class="request">Send request</button>
+    </form>
+    <!-- Scripts -->
+    <script src="assets/js/mainStock.js"></script>
+</body>
+
+</html>

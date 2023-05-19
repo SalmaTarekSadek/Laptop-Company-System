@@ -1,0 +1,263 @@
+
+a,
+a:hover,
+a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+/* ----- Nav Bar ----- */
+#nav {
+    position: absolute;
+    left: 250px;
+    padding: 10px;
+    background-color: white;
+    min-width: 178vh;
+}
+
+#nav.active {
+    position: absolute;
+    left: 80px;
+    min-width: 201vh;
+}
+
+.fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 250px;
+    background: #43425D;
+    min-height: 100%;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+#sidebar p {
+    display: inline;
+}
+
+#sidebar.active .sidebar-header h3,
+#sidebar.active .CTAs,
+#sidebar.active p,
+#sidebar.active img,
+#sidebar.active h3 {
+    display: none;
+}
+
+#sidebar #icon {
+    display: none;
+}
+
+#sidebar.active #icon {
+    display: block;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #33334f;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background: #33334f;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+    position: absolute;
+    right: 20px;
+}
+
+.sidebar-header button {
+    color: white;
+    background-color: #33334f;
+    border: none;
+}
+
+#sidebar img {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* ----- content ----- */
+
+#content {
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+#content.active {
+    margin-left: 125px;
+}
+
+
+/* ----- Card ----- */
+.card {
+    background-color: white;
+    height: 150px;
+    max-width: 300px;
+    padding-left: 10px;
+
+}
+
+.card p {
+    color: #43425D;
+    margin: 15px 0px 25px 0px;
+}
+
+.card h4 {
+    font-size: 25px;
+    color: #4D4F5C;
+}
+
+.card img {
+    width: 150px;
+}
+
+
+/* ----- Buttons ----- */
+#div1{
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#div0{
+    margin-bottom: 40px;
+}
+
+.btn-space {
+  margin-bottom: 20px;
+}
+
+#div1 button{
+    color: #A3A6B4;
+    background-color: #F5F6FA;
+    font-weight: bold;
+}
+
+
+/* ----- Head ----- */
+#head{
+    position:absolute;
+    bottom: 10px;
+    font-size: 25px;
+    left: 45%;
+    color: #A3A6B4;
+}
+
+
+/* ----- Lap Form ----- */
+.form{
+   background-color:white;
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+    padding: 0px 15px 15px;
+    border-radius: 20px;
+    height:600px ;
+}
+
+
+.select{
+    width: 250px;
+    border-color: #EAEAEA;
+    border-width: 7px;
+    border-radius: 20px;
+    color: #707070;
+    display: block;
+    padding: 3px;
+}
+
+#serial{
+    margin: 15px 0px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #A3A6B4;
+    border-radius: 10px;
+}
+
+#serial Input[type="text"]{
+    border: none;
+    margin-right: 25px;
+    
+}
+
+#serial Input[type="text"]:focus , select:focus{
+    outline: none;
+}
+
+ #lapForm Input[type="submit"]{
+    background-color: #A3A0FB;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 7px;
+    border: none;
+}
+.sub{
+    margin-right: 15px;
+}
+
+
+
+/* ----- Char Form ----- */
+.sub2{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    background-color: #A3A0FB;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    padding: 7px;
+    width: 250px;
+}
+
+.txt2{
+    width: 250px;
+    position: absolute;
+    bottom: 80px;
+    color: #707070;
+    font-size: 15px;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.hide {
+    display: none !important;
+}
